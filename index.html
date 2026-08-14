@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.png">
+  <title>Atticus McWhorter</title>
+
+  <!-- This page (only this page) uses a custom font, Ugly Gerry, and
+       centers everything. That takes a little bit of CSS, so it's
+       kept right here rather than in a separate stylesheet — the
+       rest of the site still has none.
+
+       For this to work, you need Gerry.otf sitting in a "fonts"
+       folder next to this file. See the README for where to get it. -->
+  <style>
+    @font-face {
+      font-family: "Gerry";
+      src: url("fonts/Gerry.otf");
+    }
+    body {
+      font-family: "Gerry", sans-serif;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Atticus McWhorter</h1>
+  <p>PhD Student in Mathematics, Dartmouth College</p>
+
+  <!-- The big nav links. Each one is just a link. Copy this pattern
+       if you ever want to add another one. -->
+  <nav>
+    <a href="bio.html">BIO</a>
+    &nbsp;&nbsp;
+    <a href="research.html">RESEARCH</a>
+    &nbsp;&nbsp;
+    <a href="teaching.html">TEACHING</a>
+    &nbsp;&nbsp;
+    <a href="contact.html">CONTACT</a>
+  </nav>
+
+  <hr>
+
+  <!-- This canvas plays your Marked Edge Walk algorithm, running live
+       (see mew-background.js). Its size is set in mew-background.js
+       (as a fraction of the window), not here — that's what lets it
+       fill a good part of the screen on any size window. -->
+  <canvas
+    id="mew-canvas"
+    title="This is a visualization of the Marked Edge Walk, an algorithm I developed with Daryl DeFord. For more information, check out the link in the research tab."
+  ></canvas>
+
+  <hr>
+
+  <footer>
+    <p>&copy; 2026 Atticus McWhorter</p>
+  </footer>
+
+  <script src="mew-background.js"></script>
+</body>
+</html>
